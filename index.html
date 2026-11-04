@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#100b16">
+    <title>2nd Anniversary</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="anniv.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="stars" id="stars" aria-hidden="true"></div>
+
+    <header class="navbar">
+        <a href="#home" class="logo">for you<span>♡</span></a>
+
+        <nav class="nav-links" aria-label="Navigasi utama">
+            <a href="#home">Home</a>
+            <a href="#memories">Memories</a>
+            <a href="#gift">Gift</a>
+        </nav>
+
+        <button class="music-button" id="musicToggle" type="button" aria-label="Putar musik">
+            <span id="musicIcon">♪</span>
+            <span id="musicLabel">Play music</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">A LITTLE UNIVERSE</p>
+                <h1>To My Favorite<br><span>Person.</span></h1>
+
+                <p class="hero-description" id="heroDescription">
+                    Some people make ordinary days feel like a scene
+                    from a beautiful movie. You are that person for me.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#memories" class="button primary">
+                        Explore Our Memories <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="hero-footer">
+                    <span class="status-dot"></span>
+                    <span>Made With All My Heart</span>
+                    <span class="separator">/</span>
+                    <span>Just for You</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="photo-frame">
+                    <div class="photo-decoration">✦</div>
+                    <img id="coverImage" src="f4.jpeg" alt="Our special moment">
+
+                    <div class="photo-caption">
+                        <span>Our Special Day</span>
+                        <span>♡</span>
+                    </div>
+                </div>
+
+                <span class="floating-heart heart-one">✦</span>
+                <span class="floating-heart heart-two">♡</span>
+                <span class="floating-heart heart-three">✧</span>
+
+                <div class="photo-note note-top">a little piece of my universe</div>
+                <div class="photo-note note-bottom">you, always ♡</div>
+            </div>
+        </section>
+
+        <section class="memories section" id="memories">
+            <div class="section-heading">
+                <p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p>
+                <h2>Our little collection<br>of <span>happiness.</span></h2>
+                <p>A few moments I'd love to keep forever.</p>
+            </div>
+
+            <div class="memories-grid">
+                <article class="memory-card">
+                    <button class="memory-image" type="button" aria-label="Perbesar foto kenangan pertama">
+                        <img id="memory1" src="f7.jpeg" alt="Memory One">
+                        <span class="image-overlay">♡</span>
+                    </button>
+
+                    <div class="memory-info">
+                        <span class="memory-number">01 / A LITTLE MEMORY</span>
+                        <h3>The Moment I Keep</h3>
+                        <p>Some moments deserve to stay forever.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card memory-offset">
+                    <button class="memory-image" type="button" aria-label="Perbesar foto kenangan kedua">
+                        <img id="memory2" src="f5.jpeg" alt="Memory Two">
+                        <span class="image-overlay">♡</span>
+                    </button>
+
+                    <div class="memory-info">
+                        <span class="memory-number">02 / A LITTLE SMILE</span>
+                        <h3>Your Kind of Magic</h3>
+                        <p>Ordinary days become special with you.</p>
+                    </div>
+                </article>
+
+                <article class="memory-card">
+                    <button class="memory-image" type="button" aria-label="Perbesar foto kenangan ketiga">
+                        <img id="memory3" src="f3.jpeg" alt="Memory Three">
+                        <span class="image-overlay">♡</span>
+                    </button>
+
+                    <div class="memory-info">
+                        <span class="memory-number">03 / FOREVER KIND OF FEELING</span>
+                        <h3>A Moment to Remember</h3>
+                        <p>And many more memories waiting to happen.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="memory-footer">
+                <span>✧</span>
+                <p>the little things are the big things.</p>
+                <span>✧</span>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <span class="quote-mark">"</span>
+
+            <blockquote id="quoteText">
+                If I could keep one thing forever,
+                it would be the feeling of having you in my world.
+            </blockquote>
+
+            <p>with love, always ♡</p>
+        </section>
+
+        <section class="gift-section section" id="gift">
+            <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+            <h2>One last thing<br><span>My favorite person.</span></h2>
+
+            <p class="gift-description">
+                There's something I've been waiting to tell you...
+            </p>
+
+            <button class="gift-box" id="giftBox" type="button" aria-expanded="false">
+                <span class="gift-emoji">🎁</span>
+                <span class="gift-hint" id="giftHint">Tap to open your gift</span>
+            </button>
+
+            <div class="gift-letter" id="giftLetter" aria-live="polite">
+                <div class="letter-inner">
+                    <div class="letter-top">
+                        <span>A LETTER FROM MY HEART</span>
+                        <span>♡</span>
+                    </div>
+
+                    <h3>FOR <span id="letterName">My favorite person</span></h3>
+
+                    <div class="letter-divider">✦ &nbsp; ♡ &nbsp; ✦</div>
+
+                    <p class="letter-text" id="typedLetter"></p>
+                    <span class="typing-cursor" id="typingCursor">|</span>
+
+                    <div class="letter-signature">
+                        with all my heart,
+                        <span>someone who cares about you ♡</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Made with love, just for you <span>♡</span></p>
+        <a href="#home">back to beginning ↑</a>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau foto">
+        <button class="close-lightbox" id="closeLightbox" type="button" aria-label="Tutup">&times;</button>
+        <img src="" alt="Photo preview" id="lightboxImage">
+    </div>
+
+    <audio id="backgroundMusic" loop preload="none">
+        <source src="musik.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung audio.
+    </audio>
+
+    <script src="anniv.js"></script>
+</body>
+</html>
